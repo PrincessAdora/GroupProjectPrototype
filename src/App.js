@@ -1,7 +1,7 @@
 import styles from "./styles.css";
 import { useRef, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-// import Navbar from "./components/NavBar";
+import Navbar from "./components/NavBar";
 
 // import { IParallax } from "@react-spring/web";
 // import { animated, useSpring } from "react-spring";
@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Parallax pages={3} className="container" horizontal>
         <Page offset={0} color="red" />
         <Page offset={1} color="purple" />
