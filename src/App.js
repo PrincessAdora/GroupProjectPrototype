@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./components/NavBar";
 import Footer from "./components/footer";
-import Scroll from "./components/Page";
+import Scroll from "./components/Scroll";
 import { render } from "react-dom";
 // import { IParallax } from "@react-spring/web";
 // import { animated, useSpring } from "react-spring";
@@ -67,12 +67,16 @@ class App extends Component {
       <div>
         <Scroll />
         {/* PUT API RESPONSE DATA HERE */}
-        {this.state.data.map((application) => (
-          <li>
-            {application.boro}:{application.building}
-          </li>
-        ))}
+        <section className="list">
+          {this.state.data.map((application) => (
+            <li>
+              {application.boro}:{application.building}
+            </li>
+          ))}
+        </section>
       </div>
     );
   }
 }
+
+export default App;
