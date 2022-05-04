@@ -66,11 +66,12 @@ class App extends Component {
     return (
       <div>
         <Scroll />
-        {/* PUT API RESPONSE DATA HERE */}
+        {/* RESTAURANT DATA IS BELOW*/}
         <section className="list">
           {this.state.data.map((application) => (
             <li>
-              {application.boro}:{application.building}
+              {application.dba}:{application.zipcode}:{application.grade}:
+              {application.cuisine_description}
             </li>
           ))}
         </section>
