@@ -62,7 +62,7 @@ class App extends Component {
         console.log(e);
       });
 
-    //     this.state.data.map((application) => (
+    //    this.state.data.map((application) => (
 
     //       application.dba:application.zipcode:application.grade:
     //       application.cuisine_description
@@ -75,7 +75,14 @@ class App extends Component {
       <div>
         <Scroll />
         {/* RESTAURANT DATA IS BELOW*/}
-        <section className="list"></section>
+        <section className="list">
+          {/* {this.state.data.map((application) => (
+          <li>
+     {application.dba}:{application.zipcode}:{application.grade}:
+     {application.cuisine_description}
+          </li>
+ ))} */}
+        </section>
       </div>
     );
   }
