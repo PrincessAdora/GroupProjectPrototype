@@ -5,6 +5,7 @@ import Navbar from "./components/NavBar";
 import Footer from "./components/footer";
 import Scroll from "./components/Scroll";
 import { render } from "react-dom";
+
 // import { IParallax } from "@react-spring/web";
 // import { animated, useSpring } from "react-spring";
 
@@ -60,6 +61,13 @@ class App extends Component {
       .catch((e) => {
         console.log(e);
       });
+
+    //     this.state.data.map((application) => (
+
+    //       application.dba:application.zipcode:application.grade:
+    //       application.cuisine_description
+
+    // ))}
   };
 
   render() {
@@ -67,14 +75,7 @@ class App extends Component {
       <div>
         <Scroll />
         {/* RESTAURANT DATA IS BELOW*/}
-        <section className="list">
-          {this.state.data.map((application) => (
-            <li>
-              {application.dba}:{application.zipcode}:{application.grade}:
-              {application.cuisine_description}
-            </li>
-          ))}
-        </section>
+        <section className="list"></section>
       </div>
     );
   }

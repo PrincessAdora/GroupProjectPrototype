@@ -26,7 +26,11 @@ function Page({ offset, color }) {
 
       {/*Navbar Parallax layer -- behind all other layers */}
 
-      <ParallaxLayer offset={offset} speed={3.5}>
+      <ParallaxLayer
+        offset={offset}
+        speed={3.5}
+        style={{ marginTop: "-200px" }}
+      >
         <Navbar />
       </ParallaxLayer>
     </>
