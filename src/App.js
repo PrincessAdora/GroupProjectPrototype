@@ -1,9 +1,11 @@
 import styles from "./styles.css";
 import React, { Component } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { BubbleChart } from "reaviz";
 import Navbar from "./components/NavBar";
 import Footer from "./components/footer";
 import Scroll from "./components/Scroll";
+import BubbleButt from "./components/BubbleButt";
 import { render } from "react-dom";
 
 // import { IParallax } from "@react-spring/web";
@@ -74,6 +76,7 @@ class App extends Component {
     return (
       <div>
         <Scroll />
+        <BubbleButt data={this.state.data} height={450} width={450} />
         {/* RESTAURANT DATA IS BELOW*/}
         <section className="list">
           {/* {this.state.data.map((application) => (
