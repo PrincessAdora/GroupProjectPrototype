@@ -64,6 +64,7 @@ body {
 
 .light {
   background-image: linear-gradient(to right, #fffde4, #7bc6cc);
+  /* background-image: url("Bronx.jpg"); */
 }
 
 .mid {

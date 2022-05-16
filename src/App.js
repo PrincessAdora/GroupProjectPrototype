@@ -7,6 +7,9 @@ import Footer from "./components/footer";
 import Scroll from "./components/Scroll";
 import BubbleButt from "./components/BubbleButt";
 import { render } from "react-dom";
+//<a href="https://www.vecteezy.com/free-vector/city-perspective">City Perspective Vectors by Vecteezy</a>
+//<a href="https://www.vecteezy.com/free-vector/street">Street Vectors by Vecteezy</a>
+//<a href="https://www.vecteezy.com/free-vector/bridge">Bridge Vectors by Vecteezy</a>
 
 // import { IParallax } from "@react-spring/web";
 // import { animated, useSpring } from "react-spring";

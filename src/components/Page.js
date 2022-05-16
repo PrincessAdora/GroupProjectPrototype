@@ -1,6 +1,9 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./NavBar";
+import Bronx from "../images/Bronx.jpg";
+import Brooklyn from "../images/Brooklyn.jpg";
+import Manhattan from "../images/Manhattan.jpg";
 
 function Page({ offset, color }) {
   return (
