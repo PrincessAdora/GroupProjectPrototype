@@ -1,9 +1,8 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./NavBar";
-import Bronx from "../images/Bronx.jpg";
-import Brooklyn from "../images/Brooklyn.jpg";
-import Manhattan from "../images/Manhattan.jpg";
+import Icons from "./Icons";
+import Button from "./Button";
 
 function Page({ offset, color }) {
   return (
@@ -21,11 +20,11 @@ function Page({ offset, color }) {
       </ParallaxLayer>
 
       {/*Text Parallax Layer -- over color and backgronund layers */}
-      <ParallaxLayer offset={offset} speed={1}>
+      {/* <ParallaxLayer offset={offset} speed={1}>
         <div className="text">
           <span>Restaurant Reviews</span>
         </div>
-      </ParallaxLayer>
+      </ParallaxLayer> */}
 
       {/*Navbar Parallax layer -- behind all other layers */}
 
@@ -35,6 +34,10 @@ function Page({ offset, color }) {
         style={{ marginTop: "-200px" }}
       >
         <Navbar />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={3.5} style={{ marginTop: "100px" }}>
+        <Icons />
       </ParallaxLayer>
     </>
   );

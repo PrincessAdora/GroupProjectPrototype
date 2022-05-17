@@ -86,7 +86,7 @@ class App extends Component {
           <li>
      {application.dba}:{application.zipcode}:{application.grade}:
      {application.cuisine_description}
-          </li>
+          </li> 
  ))} */}
         </section>
       </div>

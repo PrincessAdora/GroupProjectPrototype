@@ -1,9 +1,9 @@
 import React from "react";
-import icon from "./golden.jpeg";
+import icon from "../images/fork.jpg";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar  navbar-expand-lg navbar-light bg-light">
       <button className="navbar-brand">
         <img src={icon} width="60" height="60" alt="" />
       </button>
