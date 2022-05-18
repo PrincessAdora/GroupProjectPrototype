@@ -1,8 +1,9 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./NavBar";
-import Icons from "./Icons";
-import Button from "./Button";
+import Bronx from "../images/Inland.png";
+import Manhattan from "../images/City.png";
+import Brooklyn from "../images/Bridge.png";
 
 function Page({ offset, color }) {
   return (
@@ -37,7 +38,50 @@ function Page({ offset, color }) {
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={3.5} style={{ marginTop: "100px" }}>
-        <Icons />
+        <div className="icon1">
+          <img src={Bronx} width="100" height="100" alt="" />
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={3.5} style={{ marginTop: "100px" }}>
+        <div className="icon2">
+          <img src={Manhattan} width="100" height="100" alt="" />
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={3.5} style={{ marginTop: "100px" }}>
+        <div className="icon3">
+          <img src={Brooklyn} width="100" height="100" alt="" />
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer
+        offset={offset}
+        speed={3.5}
+        style={{ marginTop: "200px", marginLeft: "-150px" }}
+      >
+        <div className="button1">
+          {/* Bronx Button */}
+          <button>BRONX</button>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={3.5} style={{ marginTop: "200px" }}>
+        <div className="button2">
+          {/* Manhattan Button */}
+          <button>MANHATTAN</button>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer
+        offset={offset}
+        speed={3.5}
+        style={{ marginTop: "200px", marginLeft: "150px" }}
+      >
+        <div className="button3">
+          {/* Brooklyn Button */}
+          <button>BROOKLYN</button>
+        </div>
       </ParallaxLayer>
     </>
   );

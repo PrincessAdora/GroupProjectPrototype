@@ -5,7 +5,7 @@ import Brooklyn from "../images/Bridge.png";
 
 function Icons() {
   return (
-    <div className="">
+    <div className="icons">
       <img src={Bronx} width="100" height="100" alt="" />
       <img src={Manhattan} width="100" height="100" alt="" />
       <img src={Brooklyn} width="100" height="100" alt="" />
