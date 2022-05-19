@@ -5,10 +5,10 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 function Scroll() {
   return (
     <Parallax pages={4} className="container" horizontal>
-      <Page offset={0} color="light" />
-      <Page offset={1} color="mid" />
-      <Page offset={2} color="dark" />
-      <Page offset={3} color="darker" />
+      <Page offset={0} color="light" data={props.data} />
+      <Page offset={1} color="mid" data={props.data} />
+      <Page offset={2} color="dark" data={props.data} />
+      <Page offset={3} color="darker" data={props.data} />
       {/* <Page offset={2} color="purple" />
       <Page offset={3} color="pink" /> */}
     </Parallax>

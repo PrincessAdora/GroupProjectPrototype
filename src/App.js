@@ -5,8 +5,11 @@ import { BubbleChart } from "reaviz";
 import Navbar from "./components/NavBar";
 import Footer from "./components/footer";
 import Scroll from "./components/Scroll";
-import BubbleButt from "./components/BubbleButt";
 import { render } from "react-dom";
+import { useState } from "react";
+//import Resturant from "./components/Resturant";
+import search from "./components/search";
+
 //<a href="https://www.vecteezy.com/free-vector/city-perspective">City Perspective Vectors by Vecteezy</a>
 //<a href="https://www.vecteezy.com/free-vector/street">Street Vectors by Vecteezy</a>
 //<a href="https://www.vecteezy.com/free-vector/bridge">Bridge Vectors by Vecteezy</a>
@@ -78,8 +81,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Scroll />
-        <BubbleButt data={this.state.data} height={450} width={450} />
+        <Scroll data={this.state.data} />
         {/* RESTAURANT DATA IS BELOW*/}
         <section className="list">
           {/* {this.state.data.map((application) => (
@@ -88,6 +90,7 @@ class App extends Component {
      {application.cuisine_description}
           </li> 
  ))} */}
+          <Search data={this.state.data} />
         </section>
       </div>
     );
