@@ -1,5 +1,6 @@
+@import url("https://rsms.me/inter/inter.css");
+
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 
@@ -11,7 +12,7 @@ body,
 }
 
 body {
-  font-family: system-ui;
+  font-family: inter;
   margin: 0;
   padding: 0;
 }
@@ -51,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.text {
+/* .text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +61,7 @@ body {
   font-size: 30px;
   color: #626262;
   font-weight: 700;
-}
+} */
 
 .light {
   background-image: linear-gradient(to right, #fffde4, #7bc6cc);
@@ -75,41 +76,21 @@ body {
   background-image: linear-gradient(to right, #be93c5, #005aa7);
 }
 
-.button1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.darker {
+  background-image: linear-gradient(to right, #005aa7, #ff0099);
+}
+
+.button {
   background-color: #c095e3;
   border-radius: 8px;
-  color: black;
-  padding: 10px;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
   margin-top: -100px;
   display: inline-block;
   border: none;
-}
-
-.button2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #c095e3;
-  border-radius: 8px;
-  color: black;
-  padding: 10px;
-  margin-top: -100px;
-  display: inline-block;
-}
-
-.button3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #c095e3;
-  border-radius: 8px;
-  color: black;
-  padding: 10px;
-  margin-top: -100px;
-  display: inline-block;
+  outline: none;
+  font-weight: 700;
 }
 
 .icon1 {
@@ -136,7 +117,7 @@ body {
   outline: 0;
 }
 
-Search
+/* Search
   or
   jump
   to…
@@ -178,8 +159,8 @@ Search
   lines
   (27 sloc)
   585
-  Bytes
-  .sidebar {
+  Bytes */
+.sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
