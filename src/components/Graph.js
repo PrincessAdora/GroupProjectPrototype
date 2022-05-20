@@ -1,19 +1,16 @@
-import React from 'react';
-import data from 
-import {VictoryChart, VictoryHistogram} from "victory";
+import React from "react";
+import { VictoryChart, VictoryHistogram } from "victory";
 
-function Graph() {
-      
+function Graph(props) {
   return (
-   <div>
-
-    <VictoryChart>
-      <VictoryHistogram
-       style={{ data: { fill: '#F1737F' }}}
-       cornerRadius={3}
-       data={props.data}
-      />
-    </VictoryChart>
+    <div>
+      <VictoryChart>
+        <VictoryHistogram
+          style={{ data: { fill: "#F1737F" } }}
+          cornerRadius={3}
+          data={props.data}
+        />
+      </VictoryChart>
     </div>
   );
 }

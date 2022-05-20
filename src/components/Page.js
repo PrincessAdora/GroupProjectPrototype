@@ -1,11 +1,12 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./NavBar";
+import Graph from "./Graph";
 import Bronx from "../images/Inland.png";
 import Manhattan from "../images/City.png";
 import Brooklyn from "../images/Bridge.png";
 
-function Page({ offset, color }) {
+function Page(props, { offset, color }) {
   return (
     <>
       {/* Set offset to a specific number if you only want that layer to show on one page,
@@ -14,9 +15,9 @@ function Page({ offset, color }) {
 
       {/* SOMETHING IN BACKGROUND PUT AN INVISIBLE OVERLAY OVER THE WEBPAGE, PREVENTING YOU FROM BEING ABLE TO CLICK ANYTHING */}
       {/*Background Parallax layer -- behind all other layers */}
-      {/* <ParallaxLayer offset={offset} speed={1}>
+      <ParallaxLayer offset={offset} speed={1}>
         <div className="background"></div>
-      </ParallaxLayer> */}
+      </ParallaxLayer>
 
       {/*Color Parallax Layer -- over background layer */}
       <ParallaxLayer offset={offset} speed={2.1}>
@@ -32,13 +33,13 @@ function Page({ offset, color }) {
 
       {/*Navbar Parallax layer -- behind all other layers */}
 
-      {/* <ParallaxLayer
+      <ParallaxLayer
         offset={offset}
         speed={3.5}
         style={{ marginTop: "-200px" }}
       >
         <Navbar />
-      </ParallaxLayer> */}
+      </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={1.7} style={{ marginTop: "100px" }}>
         <img src={Bronx} width="100" height="100" alt="" className="icon1" />
@@ -87,13 +88,13 @@ function Page({ offset, color }) {
         </button>
       </ParallaxLayer>
 
-      <ParallaxLayer
-        offset={0}
+      {/* <ParallaxLayer
+        offset={offset}
         speed={1.4}
         style={{ marginTop: "200px", marginLeft: "150px" }}
       >
         <Graph data={props.data} />
-      </ParallaxLayer>
+      </ParallaxLayer> */}
     </>
   );
 }

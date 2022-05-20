@@ -2,7 +2,7 @@ import React from "react";
 import Page from "./Page.js";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-function Scroll() {
+function Scroll(props) {
   return (
     <Parallax pages={4} className="container" horizontal>
       <Page offset={0} color="light" data={props.data} />

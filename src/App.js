@@ -90,7 +90,7 @@ class App extends Component {
      {application.cuisine_description}
           </li> 
  ))} */}
-          <Search data={this.state.data} />
+          {/* <Search data={this.state.data} /> */}
         </section>
       </div>
     );
